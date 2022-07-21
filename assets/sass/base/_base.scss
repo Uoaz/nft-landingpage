@@ -115,18 +115,11 @@ body {
 
     .sec-3{
         .gradient{
-            background: rgb(156,118,184);
-            background: linear-gradient(0deg, rgba(156,118,184,0.08165272945115543) 0%, rgba(156,118,184,1) 100%);  
-            background-clip: text;
-            -webkit-text-fill-color: transparent;
-            font-size: 1.5rem;
-            text-align: center;
+            @extend %gradient;
         }
 
         h1{
-            text-align: center;
-            font-size: 3rem;
-            font-weight: light;
+            @extend %title;
         }
 
         .categorie{
@@ -196,6 +189,20 @@ body {
             width: 5%;
         }
 
+    }
+
+    // CREATE & SELL
+
+    .sec-4{
+        p{
+            @extend %gradient;
+            font-size: 2rem;
+            margin-top: 10rem;
+        }
+
+        h1{
+            @extend %title;
+        }
     }
 }
 
