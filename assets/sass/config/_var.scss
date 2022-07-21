@@ -2,8 +2,8 @@
 
 /* ---------- VARIABLES ---------- */
 
-$body__color: #1C233D;
-$txt__color: white;
+$body__clr: #1C233D;
+$txt__clr: white;
 $font: 'Space Grotesk', sans-serif;
 
 /* ---------- @EXTEND ---------- */
@@ -27,6 +27,13 @@ $font: 'Space Grotesk', sans-serif;
     background: rgb(195,103,230);
     background: linear-gradient(90deg, rgba(195,103,230,0.8995799003195029) 35%, rgba(190,206,239,0) 100%); 
     padding: .5% 1.5%;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+%btn2{
+    padding: 1% 4%;
+    background-color: #30384D;
     border-radius: 10px;
 }
 

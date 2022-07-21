@@ -8,22 +8,194 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: $body__color;
+    background-color: $body__clr;
 
-    header{
+    // DISCOVER
+
+    .sec-1{
         @extend %center;
-        justify-content: space-around;
+        justify-content: space-between;
+        max-width: 88%;
 
-        nav{
+        .title{
+            width: 45%;
 
-            width: 20%;
-            ul{
-                @extend %align__li;
+            h1{
+                font-size: 7rem;
+                margin-bottom: 0;
+            }
+
+            p{
+                font-size: 1.3rem;
+                width: 90%;
+                margin-bottom: 8%;
+            }
+
+            .btn-discover{
+                @extend %btn;
+                padding: 2% 10%;
+                font-size: 2.2rem;
+            }
+
+            .figures{
+                @extend %center;
+                justify-content: space-between;
+                width: 100%;
+                text-align: center;
+                margin-top: 5rem;
+
+                .artworks h1,
+                .auctions h1,
+                .artists h1{
+                    font-size: 4rem;
+                }
+
+                .artworks p,
+                .auctions p,
+                .artists p{
+                    margin-bottom: 0;
+                }
+            }
+            
+        }
+
+
+        .container-img{
+            background-color: #30384D;
+            @extend %center;
+            padding: 3%;
+            border-radius: 20px;
+            margin: 0;
+            margin-top: 10rem;
+
+            .principal-nft{
+                width: 40rem;
+                border-radius: 15px;
+            }
+
+            .monkeys{
+                @extend %center;
+                justify-content: space-between;
+
+                .rounded-nfts img{
+                    width: 2.5rem;
+                }   
+            }
+
+            .crypto{
+                @extend %center;
+                justify-content: space-between;
+                text-align: start;
+
+                p{
+                    opacity: .7;
+                }
+
+                h1{
+                    margin-top: 0;
+                }
             }
         }
 
-        .signin{
-            @extend %btn;
+    }
+
+    // SPONSORS
+
+    .sec-2{
+        padding: 10rem 0rem;
+        max-width: 100%;
+        @extend %center;
+        justify-content: flex-end;
+
+        img{
+            width: 15rem;
+            margin-right: 5rem;
         }
     }
+
+    .sec-3{
+        .gradient{
+            background: rgb(156,118,184);
+            background: linear-gradient(0deg, rgba(156,118,184,0.08165272945115543) 0%, rgba(156,118,184,1) 100%);  
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-size: 1.5rem;
+            text-align: center;
+        }
+
+        h1{
+            text-align: center;
+            font-size: 3rem;
+            font-weight: light;
+        }
+
+        .categorie{
+            @extend %align__li;
+            width: 90%;
+            margin-bottom: 5rem;
+
+            a{
+                @extend %btn2;
+            }
+        }
+
+// CONTAINER HOT DROPS
+
+        .hot-drops{
+            @extend %center;
+            justify-content: space-around;
+            margin-bottom: 10rem;
+
+            .container-drop{
+                background-color: #30384D;
+                @extend %center;
+                padding: 1.5% 3%;
+                border-radius: 10px;
+                margin: 0;
+
+                .hot-drop-img{
+                    width: 27rem;
+                    border-radius: 15px;
+                }
+
+                .monkey{
+                    @extend %center;
+                    justify-content: space-between;
+    
+                    .rounded-profil img{
+                        width: 3.5rem;
+                    }   
+                }
+
+                .drop-crypto{
+                    @extend %center;
+                    justify-content: space-between;
+                    text-align: start;
+
+
+                    .drop-timer{
+                        text-align: center;
+                    }
+    
+                    p{
+                        opacity: .7;
+                    }
+    
+                    h1{
+                        font-size: 1.3rem;
+                        margin: 0;
+                    }
+
+                }
+            }
+        }
+
+        .more{
+            @extend %btn2;
+            @extend %center;
+            width: 5%;
+        }
+
+    }
 }
+
