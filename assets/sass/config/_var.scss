@@ -1,0 +1,37 @@
+
+
+/* ---------- VARIABLES ---------- */
+
+$body__color: #1C233D;
+$txt__color: white;
+$font: 'Space Grotesk', sans-serif;
+
+/* ---------- @EXTEND ---------- */
+
+%center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+%center__col{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+%btn{
+    background: rgb(195,103,230);
+    background: linear-gradient(90deg, rgba(195,103,230,0.8995799003195029) 35%, rgba(190,206,239,0) 100%); 
+    padding: .5% 1.5%;
+    border-radius: 10px;
+}
+
+%align__li{
+    padding: 0;
+    @extend %center;
+    justify-content: space-between;
+}

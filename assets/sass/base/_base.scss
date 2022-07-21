@@ -1,0 +1,29 @@
+@import "../config/var";
+@import "typo";
+
+/* ---------- BODY ---------- */
+
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: $body__color;
+
+    header{
+        @extend %center;
+        justify-content: space-around;
+
+        nav{
+
+            width: 20%;
+            ul{
+                @extend %align__li;
+            }
+        }
+
+        .signin{
+            @extend %btn;
+        }
+    }
+}
