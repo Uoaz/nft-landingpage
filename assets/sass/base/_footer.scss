@@ -2,3 +2,55 @@
 
 /* ---------- FOOTER ---------- */
 
+footer{
+
+    font-size: 2rem;
+
+    .footer-1{
+        @extend %center;
+        justify-content: space-around;
+        width: 100%;
+
+        .company{
+            width: 43%;
+
+            p{
+                margin-bottom: 5rem;
+            }
+
+            .social{
+                
+                i{
+                    margin-right: 2%;
+                }
+
+                i:nth-child(1){
+                    color: green;
+                }
+                
+                i:nth-child(2){
+                    color: darkblue;
+                }
+
+                i:nth-child(3){ 
+                    color: purple;
+                }
+
+                i:nth-child(4){
+                    color: red;
+                }
+            }
+        }
+    }
+
+    .footer-2{
+        font-size: 1rem;
+        color: #545C71;
+        opacity: .5;
+        @extend %center;
+        width: 90%;
+        justify-content: space-between;
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+    }
+}

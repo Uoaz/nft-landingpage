@@ -37,6 +37,13 @@ $font: 'Space Grotesk', sans-serif;
     border-radius: 10px;
 }
 
+%btn3{
+    font-size: 2rem;
+    border: solid white 1px;
+    padding: 3% 7%;
+    border-radius: 10px;
+}
+
 %align__li{
     padding: 0;
     @extend %center;
