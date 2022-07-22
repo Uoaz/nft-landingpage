@@ -194,7 +194,7 @@ body {
     // CREATE & SELL
 
     .sec-4{
-        p{
+        .gradient{
             @extend %gradient;
             font-size: 2rem;
             margin-top: 10rem;
@@ -203,6 +203,14 @@ body {
         h1{
             @extend %title;
         }
+
+        .container-cs{
+            @extend %center;
+            justify-content: space-between;
+            border: solid;
+            margin-top: 5rem;
+            width: 85%;
+        }
+
     }
 }
-
