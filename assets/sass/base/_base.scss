@@ -37,10 +37,6 @@ body {
                 font-size: 2.2rem;
             }
 
-            .btn-discover:hover{
-                filter: blur(10px);
-            }
-
             .figures{
                 @extend %center;
                 justify-content: space-between;
@@ -134,7 +130,10 @@ body {
             a{
                 @extend %btn2;
             }
+            
+    
         }
+
 
 // CONTAINER HOT DROPS
 

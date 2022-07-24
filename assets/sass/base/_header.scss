@@ -18,6 +18,10 @@ header{
             @extend %align__li;
             li{
                 font-size: 1.3rem;
+
+                a:hover{
+                    border-bottom: solid 1px white;
+                }
             }
         }
     }
@@ -38,12 +42,18 @@ header{
 
         i{
             color: white;
+            cursor: pointer;
         }
     }
 
     .signin{
         @extend %btn;
         padding: .8% 4%;
+        transition: .3s;
+    }
+
+    .signin:hover{
+        transform: scale(1.1);
     }
 
     
