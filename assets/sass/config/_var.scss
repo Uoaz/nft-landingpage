@@ -64,3 +64,22 @@ $font: 'Space Grotesk', sans-serif;
     font-size: 3rem;
     font-weight: light;
 }
+
+// use ::before and add position relative, z-index 1 and transition to main + ::before:hover : tranforsm scale(X) : 1;
+
+%animbtn{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    background: rgb(195,103,230);
+    background: linear-gradient(90deg, rgba(195,103,230,0.8995799003195029) 35%, rgba(190,206,239,0) 100%);
+    border-radius: 10px;
+
+    transition: transform 300ms ease-in-out;
+    transform: scaleX(0);
+    transform-origin: left;
+}

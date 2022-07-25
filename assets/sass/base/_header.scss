@@ -47,9 +47,19 @@ header{
     }
 
     .signin{
-        @extend %btn;
+        @extend %btn2;
         padding: .8% 4%;
         transition: .3s;
+        position: relative;
+        z-index: 1;
+    }
+
+    .signin::before{
+        @extend %animbtn;
+    }
+
+    .signin:hover::before{
+        transform: scaleX(1);
     }
 
     .signin:hover{

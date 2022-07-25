@@ -1,5 +1,6 @@
 @import "../config/var";
 @import "typo";
+@import "../config/keyframes";
 
 /* ---------- BODY ---------- */
 
@@ -32,9 +33,24 @@ body {
             }
 
             .btn-discover{
-                @extend %btn;
+                @extend %btn2;
                 padding: 2% 10%;
                 font-size: 2.2rem;
+                position: relative;
+                z-index: 1;
+                transition: .3s;
+            }
+
+            .btn-discover:hover{
+                transform: scale(1.1);
+            }
+
+            .btn-discover::before{
+                @extend %animbtn;
+            }
+
+            .btn-discover:hover::before{
+                transform: scaleX(1);
             }
 
             .figures{
@@ -129,9 +145,19 @@ body {
 
             a{
                 @extend %btn2;
+                transition: color 300ms ease-in-out;
+                z-index: 1;
+                position: relative;
             }
-            
-    
+
+            a::before{
+                @extend %animbtn;
+            }
+
+            a:hover::before{
+                transform: scaleX(1);
+            }
+
         }
 
 
@@ -190,6 +216,22 @@ body {
             @extend %btn2;
             @extend %center;
             width: 5%;
+            z-index: 1;
+            transition: ease-in-out 300ms color;
+            position: relative;
+            transition: .3s;
+        }
+
+        .more:hover{
+            transform: scale(1.1);
+        }
+
+        .more::before{
+            @extend %animbtn;
+        }
+
+        .more:hover::before{
+            transform: scaleX(1);
         }
 
     }
@@ -249,13 +291,46 @@ body {
             justify-content: space-between;
 
             .btn-create{
-                @extend %btn;
+                @extend %btn2;
                 font-size: 2rem;
                 padding: 3% 7%;
+                transition: .3s;
+                z-index: 1;
+                position: relative;
+            }
+
+            .btn-create:hover{
+                transform: scale(1.1);
+            }
+
+            .btn-create::before{
+                @extend %animbtn;
+            }
+
+            .btn-create:hover::before{
+                transform: scaleX(1);
             }
 
             .btn-watch{
                 @extend %btn3;
+                transition: .3s;
+                z-index: 1;
+                position: relative;
+            }
+
+            .btn-watch:hover{
+                transform: scale(1.1);
+                color: black;
+            }
+
+            .btn-watch::before{
+                @extend %animbtn;
+                background: rgb(195,103,230);
+                background: linear-gradient(90deg, rgba(255, 255, 255, 0.9) 35%, rgba(190,206,239,0) 100%);
+            }
+
+            .btn-watch:hover::before{
+                transform: scaleX(1);
             }
     
         }
@@ -321,14 +396,32 @@ body {
             }
         }
 
+
         .btn-watch{
             @extend %btn3;
+            transition: .3s;
+            z-index: 1;
+            position: relative;
             @extend %center;
             margin-top: 10rem;
             margin-bottom: 10rem;
             width: 20%;
             padding: 1% 0;
-            
+        }
+
+        .btn-watch:hover{
+            transform: scale(1.1);
+            color: black;
+        }
+
+        .btn-watch::before{
+            @extend %animbtn;
+            background: rgb(195,103,230);
+            background: linear-gradient(90deg, rgba(255, 255, 255, 0.9) 35%, rgba(190,206,239,0) 100%);
+        }
+
+        .btn-watch:hover::before{
+            transform: scaleX(1);
         }
     }
 
@@ -351,11 +444,26 @@ body {
         }
 
         .discord{
-            @extend %btn;
+            @extend %btn2;
             font-size: 2rem;
             border: solid 1px white;
             padding: 1% 4%;
             margin-top: 3rem;
+            position: relative;
+            z-index: 1;
+            transition: .3s;
+        }
+
+        .discord::before{
+            @extend %animbtn;
+        }
+
+        .discord:hover{
+            transform: scale(1.1);
+        }
+
+        .discord:hover::before{
+            transform: scaleX(1);
         }
     }
 }
