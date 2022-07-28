@@ -513,6 +513,8 @@ body {
             }
         }
 
+        // DISCOVER
+
         .sec-1{
             flex-direction: column;
 
@@ -530,14 +532,71 @@ body {
                     font-size: 1.5rem;
                     text-align: center;
                     margin-top: 5%;
-                    margin-bottom: 5%;
+                    margin-bottom: 10%;
                 }
 
                 .btn-discover{
-                    text-align: center;
+                    margin-left: 9%;
+                }
+
+                .figures{
+                    flex-direction: column;
                 }
             }
+
+
+            .container-img{
+                margin-top: 5rem;
+
+                .img{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+
+                    .principal-nft{
+                        width: 20rem;
+                    }
+    
+                    .monkeys{
+                        flex-direction: column;
+                        .rounded-nfts img{
+                            width: 1.5rem;
+                        }
+                    }
+
+                    .crypto{
+                        text-align: center;
+
+                    }
+                }
+
+            }
+
         }
+
+
+        // SPONSORS
+
+        .sec-2{
+            flex-direction: column;
+            padding: 5rem 0;
+
+            img{
+                margin-right: 0;
+                width: 10rem;
+            }
+        }
+
+        
+        // HOT DROPS
+
+
+        .sec-3{
+            
+        }
+
+
     
     }
 }
