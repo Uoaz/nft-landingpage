@@ -475,6 +475,16 @@ body {
 
 
 
+
+
+
+
+
+
+
+
+
+
 // RESPONSIVE
 
 
@@ -675,7 +685,65 @@ body {
             h1{
                 font-size: 2.5rem;
             }
+
+            .wrapper-creators{
+                flex-direction: column;
+                
+
+                .container-creator{
+                    width: 90%;
+
+                    .container-details{
+                        width: 70%;
+                        text-align: center;
+                    }
+                }
+
+            }
+
+            .btn-watch{
+                margin-top: 5rem;
+                margin-bottom: 5rem;
+                width: 50%;
+                padding: 2% 4%;
+            }
         }
     
+         // COMMUNITY
+
+
+        .sec-6{
+            text-align: center;
+
+        }
+
+
+    // FOOTER
+
+        footer{
+
+            font-size: 1.7rem;
+            margin-top: 10rem;
+            
+            .footer-1{
+                flex-direction: column;
+                
+                .company{
+                    width: 90%;
+                    text-align: center;
+                }
+
+                .marketplace,
+                .resources,
+                .about{
+                    display: none;
+                }
+
+            }
+
+            
+        }
+        
     }
+
 }
